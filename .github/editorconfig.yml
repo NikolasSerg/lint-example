@@ -14,12 +14,12 @@ jobs:
                 node-version: [14, 16]
         steps:
             - name: Get repository code
-                uses: actions/checkout@v2
+            uses: actions/checkout@v2
             - name: Check in node matrix
-                uses: actions/setup-node@v3
-                with:
-                    node-version: ${{ matrix.node-version }}
+            uses: actions/setup-node@v3
+            with:
+                node-version: ${{ matrix.node-version }}
             - name: Install dependencies
-                run: npm ci
+            run: npm ci
             - name: Run script
-                run: npm run lint:editorconfig
+            run: npm run lint:editorconfig
