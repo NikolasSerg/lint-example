@@ -1,0 +1,6 @@
+{
+  "**/*.{js, jsx, tsx}": [
+    "npm run lint:editorconfig",
+    "eslint"
+  ]
+}
